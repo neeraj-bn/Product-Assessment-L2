@@ -15,12 +15,12 @@ The project structure is as follows:
 
 ## Executing the Solution:
 
-1. Clone the repository and open index.html in chrome:
-
-   ```bash
-   git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-   ```
+1. Explore the deployed version of this project: https://your-deployed-link.com.
 
 ### Or
 
-2. Explore the deployed version of this project: https://your-deployed-link.com.
+2. Clone the repository and open index.html in chrome:
+
+   ```bash
+   git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git](https://github.com/neeraj8494/Product-Assessment-L2.git
+   ```
