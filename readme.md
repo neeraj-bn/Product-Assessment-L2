@@ -15,7 +15,7 @@ The project structure is as follows:
 
 ## Executing the Solution:
 
-1. Explore the deployed version of this project: https://your-deployed-link.com.
+1. Explore the deployed version of this project: https://product-assessment-l2.netlify.app/
 
 ### Or
 
