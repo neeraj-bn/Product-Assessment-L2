@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tab-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  width: 100%;
+  /* width: 500px; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 600px;
+  gap: 0;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.tab-button {
+  flex-grow: 1;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 0;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  /* border-right: 1px solid #ddd; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tab-button:last-child {
+  border-right: none;
+}
+
+.tab-button.active {
+  background-color: #000;
+  color: #fff;
+  transition: 0.7 ease-in-out;
+}
+
+.tab-img{
+  display: none;
+}
+
+.tab-img.img-active{
+  display: block;
+}
+
+#product-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  /* width: 220px; */
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  /* margin: 10px; */
+  /* border-radius: 8px; */
+  overflow: hidden;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  min-width: 165px;
+
+  max-width: 165px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+}
+
+.product-card .badge {
+  position: absolute;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 5px 10px;
+  /* border-radius: 4px; */
+  top: 3px;
+  left: 5px;
+  font-size: 12px;
+}
+
+.product-card .details {
+  padding: 10px;
+}
+
+.product-card .details h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card .details p {
+  margin: 5px 0;
+}
+
+.product-card .price-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.product-card .product-main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-card .product-vendor {
+  font-size: 12px;
+}
+
+.product-card .product-title {
+  max-width: 150px;
+  overflow: hidden;
+  text-wrap: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.product-card .vendor {
+  color: #555;
+  font-size: 14px;
+
+}
+
+
+
+.product-card .price {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 12px;
+  text-size-adjust: auto;
+  white-space: nowrap;
+}
+
+.product-card .discounted-price {
+  text-size-adjust: auto;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-card .discounted-percent {
+  color: red;
+  font-weight: bold;
+  text-size-adjust: auto;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.add-to-cart {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #333;
+}
+
+.titles {
+  position: relative;
+}
+
+.text-heading {
+  z-index: 1;
+  text-shadow: 0px 5px 5px #0000005e;
+}
+
+.text-heading-dimmed {
+  opacity: 0.5;
+  position: absolute;
+  bottom: -5;
+}
